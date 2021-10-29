@@ -1,5 +1,7 @@
 package main
 
+// 直接模拟栈即可，最后判断栈是否为空
+
 func isValid(s string) bool {
 	mp := map[byte]byte{
 		')': '(',
@@ -26,6 +28,6 @@ func isValid(s string) bool {
 	return top == 0
 }
 
-func main() {
-	isValid("()[]{}")
-}
+// func main() {
+// 	isValid("()[]{}")
+// }
