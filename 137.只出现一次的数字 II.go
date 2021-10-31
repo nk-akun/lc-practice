@@ -1,6 +1,6 @@
 package main
 
-func singleNumber(nums []int) int {
+func singleNumber2(nums []int) int {
 	var result int32 = 0
 	for i := 0; i < 32; i++ {
 		count := 0
