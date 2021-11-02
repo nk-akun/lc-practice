@@ -1,6 +1,6 @@
 package main
 
-// lowbit将两个数的不同位找到再对全体数组分类
+// lowbit将两个数的不同位找到,再对全体数组分类
 
 func singleNumber(nums []int) []int {
 
