@@ -17,6 +17,7 @@ import "fmt"
 
 // @lc code=start
 
+/*  方法1
 var ans int
 
 func integerReplacement(n int) int {
@@ -51,6 +52,29 @@ func dfs(n int, step int) {
 		dfs(n/2, step+1)
 	}
 	return
+}
+*/
+
+// 方法二,如果二进制倒数第二位是1，当然选择+1，这样可以消掉好几个1；否则就-1
+func integerReplacement(n int) int {
+	if n == 1 {
+		return 0
+	}
+
+	ans := 0
+	for n != 1 {
+		if (n & 1) == 1 {
+			if ((n>>1)&1) == 1 && n > 3 {
+				n++
+			} else {
+				n--
+			}
+		} else {
+			n >>= 1
+		}
+		ans++
+	}
+	return ans
 }
 
 // @lc code=end
