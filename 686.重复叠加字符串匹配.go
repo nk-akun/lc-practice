@@ -13,8 +13,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 // func repeatedStringMatch(a string, b string) int {
 // 	i, j := 0, 0
@@ -123,6 +121,6 @@ func idx(c byte) uint64 {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(repeatedStringMatch("abc", "wxyz"))
-}
+// func main() {
+// 	fmt.Println(repeatedStringMatch("abc", "wxyz"))
+// }
