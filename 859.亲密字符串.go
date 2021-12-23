@@ -8,8 +8,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 func buddyStrings(s string, goal string) bool {
 	if len(s) != len(goal) {
@@ -49,6 +47,6 @@ func buddyStrings(s string, goal string) bool {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(buddyStrings("a", "c"))
-}
+// func main() {
+// 	fmt.Println(buddyStrings("a", "c"))
+// }

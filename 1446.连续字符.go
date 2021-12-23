@@ -6,8 +6,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 func maxPower(s string) int {
 	ans := 0
@@ -30,6 +28,6 @@ func maxPower(s string) int {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(maxPower("aa"))
-}
+// func main() {
+// 	fmt.Println(maxPower("aa"))
+// }

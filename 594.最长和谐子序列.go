@@ -6,8 +6,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 func findLHS(nums []int) int {
 	mp := map[int]int{}
@@ -30,6 +28,6 @@ func findLHS(nums []int) int {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(findLHS([]int{1}))
-}
+// func main() {
+// 	fmt.Println(findLHS([]int{1}))
+// }

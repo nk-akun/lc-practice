@@ -6,8 +6,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 func longestSubsequence(arr []int, difference int) int {
 	mp := map[int]int{}
@@ -23,6 +21,6 @@ func longestSubsequence(arr []int, difference int) int {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(longestSubsequence([]int{1, 3, -1, 1, 3, 5}, 2))
-}
+// func main() {
+// 	fmt.Println(longestSubsequence([]int{1, 3, -1, 1, 3, 5}, 2))
+// }
