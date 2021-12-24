@@ -32,6 +32,6 @@ func getHint(secret string, guess string) string {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(getHint("111087", "100781"))
-}
+// func main() {
+// 	fmt.Println(getHint("111087", "100781"))
+// }

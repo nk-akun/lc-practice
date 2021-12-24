@@ -7,7 +7,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -45,10 +44,10 @@ func table(n int) int {
 
 // @lc code=end
 
-func main() {
-	for i := 1; i <= 10000; i++ {
-		if bulbSwitch(i) != table(i) {
-			fmt.Println(i)
-		}
-	}
-}
+// func main() {
+// 	for i := 1; i <= 10000; i++ {
+// 		if bulbSwitch(i) != table(i) {
+// 			fmt.Println(i)
+// 		}
+// 	}
+// }

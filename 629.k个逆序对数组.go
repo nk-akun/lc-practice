@@ -6,8 +6,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 
 // 超时代码
@@ -78,6 +76,6 @@ func min(x, y int) int {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(kInversePairs(4, 2))
-}
+// func main() {
+// 	fmt.Println(kInversePairs(4, 2))
+// }

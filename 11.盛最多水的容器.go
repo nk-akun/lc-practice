@@ -6,8 +6,6 @@
 
 package main
 
-import "fmt"
-
 // @lc code=start
 func maxArea(height []int) int {
 	ans := 0
@@ -39,6 +37,6 @@ func min(a, b int) int {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(maxArea([]int{1, 2, 1}))
-}
+// func main() {
+// 	fmt.Println(maxArea([]int{1, 2, 1}))
+// }
