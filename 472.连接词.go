@@ -4,9 +4,14 @@
  * [472] 连接词
  */
 
-package main
+// 字符串hash+记忆化搜索
+// 深度优先遍历每个字符串，当hash值足以形成一个完整的出现过的字符串时，选择有两个：
+// 一个是要这个字符串，hash值归零，继续遍历
+// 一个是不要这个字符串，hash不变，继续遍历。通过hash值判断累计的子串是不是某个字符串的前缀串，预处理时将所有前缀串的hash值存入map
 
-import "fmt"
+// 针对"a","aa","aaa"...这种样例引入记忆化搜索进行优化，memMap[pos][hashValue]表示pos位置时hash值为hashValue时的结果
+
+package main
 
 // @lc code=start
 
@@ -87,6 +92,6 @@ func idx(c byte) uint64 {
 
 // @lc code=end
 
-func main() {
-	fmt.Println(findAllConcatenatedWordsInADict([]string{}))
-}
+// func main() {
+// 	fmt.Println(findAllConcatenatedWordsInADict([]string{}))
+// }
