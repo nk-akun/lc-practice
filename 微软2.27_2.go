@@ -63,7 +63,14 @@ func Solution(S string, X []int, Y []int) int {
 
 // 	ans, hash := 0, 0
 // 	for i := range ns {
-// 		if ((1 << (ns[i].tag - 'A')) & hash) == 1 {
+// 		if ((1 << (ns[i].tag - 'A')) & hash) != 0 {
+// 			for j := i - 1; j >= 0; j-- {
+// 				if ns[j].dis == ns[i].dis {
+// 					ans--
+// 				} else {
+// 					break
+// 				}
+// 			}
 // 			break
 // 		}
 // 		ans++
