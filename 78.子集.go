@@ -16,11 +16,9 @@ func subsets(nums []int) [][]int {
 	for i := 0; i < (1 << (len(nums))); i++ {
 		q := make([]int, 0)
 		for j := 0; j < len(nums); j++ {
-			// fmt.Println(i, j)
 			if (i & (1 << j)) > 0 {
 				q = append(q, nums[j])
 			}
-			// fmt.Println(q)
 		}
 		ans[i] = q
 	}
