@@ -69,16 +69,12 @@ func mergeList(head1 *ListNode, head2 *ListNode) *ListNode {
 		it = it.Next
 	}
 
-	for p != nil {
+	if p != nil {
 		it.Next = p
-		p = p.Next
-		it = it.Next
 	}
 
-	for q != nil {
+	if q != nil {
 		it.Next = q
-		q = q.Next
-		it = it.Next
 	}
 
 	return head
