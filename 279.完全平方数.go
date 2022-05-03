@@ -11,7 +11,7 @@ package main
 // Your memory usage beats 89.8 % of golang submissions (6 MB)
 
 // 动态规划
-// dp跑一跑
+// dp跑一跑,打表
 
 import (
 	"fmt"
